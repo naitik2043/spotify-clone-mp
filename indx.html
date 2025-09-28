@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone - Multi Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e044ccee59.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <ul>
+        <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
+        <li>Home</li>
+        <li>About</li>
+    </ul>
+</nav>
+
+<!-- NCS Playlist -->
+<div class="container">
+    <h1>🎧 Best of NCS - No Copyright Sounds</h1>
+    <div class="songlist">
+        <div class="songItem"><img src="cover1.jpg" alt="1"><span>Let Me Love You</span><span class="songlistplay"><span class="timestamp">03:25 <i class="fas fa-play-circle"></i></span></span></div>
+        <div class="songItem"><img src="cover2.jpg" alt="2"><span>On & On</span><span class="songlistplay"><span class="timestamp">04:12 <i class="fas fa-play-circle"></i></span></span></div>
+        <div class="songItem"><img src="cover3.jpg" alt="3"><span>Faded</span><span class="songlistplay"><span class="timestamp">03:57 <i class="fas fa-play-circle"></i></span></span></div>
+        <div class="songItem"><img src="cover4.jpg" alt="4"><span>Alone</span><span class="songlistplay"><span class="timestamp">04:21 <i class="fas fa-play-circle"></i></span></span></div>
+        <div class="songItem"><img src="cover5.jpg" alt="5"><span>Reality</span><span class="songlistplay"><span class="timestamp">05:05 <i class="fas fa-play-circle"></i></span></span></div>
+        <div class="songItem"><img src="cover6.jpg" alt="6"><span>New Beginnings</span><span class="songlistplay"><span class="timestamp">04:50 <i class="fas fa-play-circle"></i></span></span></div>
+        <div class="songItem"><img src="cover7.jpg" alt="7"><span>Dreams</span><span class="songlistplay"><span class="timestamp">03:42 <i class="fas fa-play-circle"></i></span></span></div>
+        <div class="songItem"><img src="cover8.jpg" alt="8"><span>Summer</span><span class="songlistplay"><span class="timestamp">04:33 <i class="fas fa-play-circle"></i></span></span></div>
+        <div class="songItem"><img src="cover9.jpg" alt="9"><span>Glow</span><span class="songlistplay"><span class="timestamp">05:15 <i class="fas fa-play-circle"></i></span></span></div>
+        <div class="songItem"><img src="cover10.jpg" alt="10"><span>Infinity</span><span class="songlistplay"><span class="timestamp">04:08 <i class="fas fa-play-circle"></i></span></span></div>
+    </div>
+</div>
+
+<!-- Bollywood Playlist -->
+<div class="container">
+    <h1>🎶 Bollywood Love Journey – From 90s to Now ❤</h1>
+    <div class="songlist">
+        <div class="songItem"><img src="bollywood1.jpg" alt="1"><span>Pehla Nasha – Jo Jeeta Wohi Sikandar (1992)</span><span class="songlistplay"><span class="timestamp">05:00 <i class="fas fa-play-circle"></i></span></span></div>
+        <div class="songItem"><img src="bollywood2.jpg" alt="2"><span>Hum Toh Deewane Hue – Baazi (1995)</span><span class="songlistplay"><span class="timestamp">04:10 <i class="fas fa-play-circle"></i></span></span></div>
+        <div class="songItem"><img src="bollywood3.jpg" alt="3"><span>Dil Ye Bekraar Kyun Hai – Ishq (1997)</span><span class="songlistplay"><span class="timestamp">04:35 <i class="fas fa-play-circle"></i></span></span></div>
+        <div class="songItem"><img src="bollywood4.jpg" alt="4"><span>Ajab Si – Om Shanti Om (2007)</span><span class="songlistplay"><span class="timestamp">03:50 <i class="fas fa-play-circle"></i></span></span></div>
+        <div class="songItem"><img src="bollywood5.jpg" alt="5"><span>Tum Se Hi – Jab We Met (2007)</span><span class="songlistplay"><span class="timestamp">04:20 <i class="fas fa-play-circle"></i></span></span></div>
+        <div class="songItem"><img src="bollywood6.jpg" alt="6"><span>Raabta – Agent Vinod (2012)</span><span class="songlistplay"><span class="timestamp">04:45 <i class="fas fa-play-circle"></i></span></span></div>
+        <div class="songItem"><img src="bollywood7.jpg" alt="7"><span>Chaar Kadam – PK (2014)</span><span class="songlistplay"><span class="timestamp">03:55 <i class="fas fa-play-circle"></i></span></span></div>
+        <div class="songItem"><img src="bollywood8.jpg" alt="8"><span>Dekha Hazaro Dafaa – Rustom (2016)</span><span class="songlistplay"><span class="timestamp">05:10 <i class="fas fa-play-circle"></i></span></span></div>
+    </div>
+</div>
+
+<!-- BOTTOM PLAYER -->
+<div class="bottom">
+    <div class="time">
+        <span id="currentTime">0:00</span>
+        <span id="totalTime">0:00</span>
+    </div>
+    <input type="range" name="range" id="myProgressBar" min="0" max="100">
+
+    <div class="icons">
+        <i class="fas fa-backward fa-3x"></i>
+        <i class="fas fa-play-circle fa-3x" id="masterPlay"></i>
+        <i class="fas fa-forward fa-3x"></i>
+        <i class="fas fa-volume-up fa-2x" id="volumeIcon"></i>
+    </div>
+
+    <input type="range" id="volumeBar" min="0" max="100" value="100">
+
+    <div class="songInfo">
+        <img src="playing.gif" width="42px" alt="">Let Me Love You
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
